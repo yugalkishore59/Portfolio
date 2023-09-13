@@ -26,10 +26,14 @@ const Header = () => {
       >
         <div className='app__header-badge'>
           <div className='badge-cmp app__flex'>
-              <span>👋</span>
-              <div style={{marginLeft: 20}}>
-                <p className='p-text'>Hello, I am</p>
-                <h1 className='head-text'>Yugal</h1>
+              {/* <span>👋</span> */}
+              <div>
+                {/* <p className='p-text'>Hello, I am</p> */}
+                <h1 className='head-text' >Yugal</h1>
+                <h1 className='head-text'>
+                  Kishore
+                  <span style={{ color: "var(--secondary-color)"}}>.</span>
+                </h1>
               </div>
           </div>
 
@@ -37,6 +41,7 @@ const Header = () => {
           <p className='p-text'>Game Developer</p>
           <p className='p-text'>Web Developer</p>
           </div>
+          <button type="button" className="button-cmp" onClick={()=> window.open('https://drive.google.com/file/d/1vImLPFde00aT13CamF6mmNtXaQ1P0L47/view?usp=drive_link','_blank')}>Resume</button>
         </div>
       </motion.div>
 
@@ -55,7 +60,7 @@ const Header = () => {
         />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className='app__header-circles'
@@ -65,11 +70,34 @@ const Header = () => {
             <img src={circle} alt="circle" />
           </div>
         ))}
+      </motion.div> */}
+
+      <motion.div
+        whileInView={{x: [100,0], opacity: [0,1]}}
+        transition={{duration:0.5}}
+        className='app__header-info'
+      >
+          <div className='app__header-badge'>
+            <div className='badge-cmp app__flex'>
+                <div>
+                  <h1 className='head-text' >Yugal</h1>
+                  <h1 className='head-text'>
+                    Kishore
+                    <span style={{ color: "var(--secondary-color)"}}>.</span>
+                  </h1>
+                </div>
+            </div>
+
+            <div className='tag-cmp app__flex'>
+              <p className='p-text'>Game Developer</p>
+              <p className='p-text'>Web Developer</p>
+            </div>
+          </div>
       </motion.div>
 
     </div>
   )
 }
 
-export default AppWrap(Header,'home','app__newPrimbg1');
+export default AppWrap(Header,'home','app__newPrimbg');
 // export default Header

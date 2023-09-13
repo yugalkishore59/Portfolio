@@ -41,8 +41,8 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     height: 100%;
 
     @media screen and (max-width: 2000px){ 
@@ -51,49 +51,79 @@
     }
 }
 
-.app__header-badge{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.tag-cmp{
     flex-direction: column;
+    margin-top: 1rem;
 
-    .badge-cmp, .tag-cmp {
-        //changing both classes
-
-        padding: 1rem 2rem;
-        border: var(--white-color);
-        border-radius: 15px;
-        flex-direction: row;
-        width: auto;
-
-        box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.1);
-    }
-
-    .tag-cmp{
-        flex-direction: column;
-        margin-top: 3rem;
-
-        p{
-            width: 100%;
-            text-transform: uppercase;
-            text-align: right;
-        }
-    }
-
-    span{
-        font-size: 2.5rem;
-
-        @media screen and (min-width: 2000px) {
-            font-size: 5rem;
-        }
-    }
-
-    @media screen and (max-width:1200px){
-        justify-content: flex-start;
-        align-items: flex-start;
+    p{
+        width: 100%;
+        // text-transform: uppercase;
+        text-align: left;
+        color: white;
     }
 }
+
+.button-cmp{
+    margin-top: 2rem;
+
+    width: 150px;
+    height: 40px;
+
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: gray solid 1px;
+    
+
+    &:hover{
+        background-color: var(--secondary-color);
+        border: none;
+    }
+}
+
+// .app__header-badge{
+//     width: 100%;
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: flex-start;
+//     flex-direction: column;
+
+//     .badge-cmp, .tag-cmp {
+//         //changing both classes
+
+//         padding: 1rem 2rem;
+//         border: var(--white-color);
+//         border-radius: 15px;
+//         flex-direction: row;
+//         width: auto;
+
+//         box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.1);
+//     }
+
+//     .tag-cmp{
+//         flex-direction: column;
+//         margin-top: 3rem;
+
+//         p{
+//             width: 100%;
+//             text-transform: uppercase;
+//             text-align: left;
+//         }
+//     }
+
+//     span{
+//         font-size: 2.5rem;
+
+//         @media screen and (min-width: 2000px) {
+//             font-size: 5rem;
+//         }
+//     }
+
+//     @media screen and (max-width:1200px){
+//         justify-content: flex-start;
+//         align-items: flex-start;
+//     }
+// }
 
 .app__header-circles{
     flex: 0.75;
