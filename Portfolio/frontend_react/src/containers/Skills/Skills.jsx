@@ -90,8 +90,13 @@ const Skills = () => {
   );
 };
 
+// export default AppWrap(
+//   MotionWrap(Skills, 'app__skills'),
+//   'skills',
+//   'app__whitebg',
+// );
 export default AppWrap(
   MotionWrap(Skills, 'app__skills'),
   'skills',
-  'app__whitebg',
+  'app__newSecbg',
 );

@@ -6,7 +6,8 @@
     align-items: center;
 
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.25);
+    // background: rgba(255, 255, 255, 0.25);
+    background: rgba(75, 75, 75, 0.25);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     position: fixed;
@@ -20,8 +21,10 @@
 
     // this nesting of components is not possible in css. this is benifit of scss.
     img{
-        width: 90px;
-        height: 20px;
+        width: 60px;
+        height: 40px;
+        // width: 10%;
+        // height: 10%;
         // we can also add media queries inside
         @media screen and (min-width: 2000px) {
             width: 180px;
@@ -35,6 +38,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    // margin-right: 200px;
 
     li{
         margin: 0 1rem;
@@ -51,7 +55,8 @@
         }
 
         a{
-            color: var(--gray-color);
+            // color: var(--gray-color);
+            color: var(--white-color);
             text-decoration: none;
             flex-direction: column;
 
@@ -94,7 +99,7 @@
         height: 70%;
         color: var(--white-color);
     }
-
+    
     div{
         position: fixed;
         top: 0;
@@ -110,8 +115,9 @@
         justify-content: flex-end;
         align-items: flex-end;
         flex-direction: column;
-        background: url('../../assets/bgWhite.png');
-        background-color: var(--white-color);
+        // background: url('../../assets/bgWhite.png');
+        // background-color: var(--white-color);
+        background-color: var(--darkGray-color);
         background-size: cover;
         background-repeat: repeat;
 
