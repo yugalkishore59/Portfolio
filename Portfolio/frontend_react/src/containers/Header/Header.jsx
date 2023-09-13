@@ -51,13 +51,13 @@ const Header = () => {
       className='app__header-img'
       >
         <img src={images.profile} alt="profile_bg" />
-        <motion.img
+        {/* <motion.img
         whileInView={{scale: [0,1]}}
         transition={{duration:1, ease: 'easeInOut'}}
         className='overlay_circle'
         src={images.circle}
         alt='profile_circle'
-        />
+        /> */}
       </motion.div>
 
       {/* <motion.div
@@ -78,19 +78,8 @@ const Header = () => {
         className='app__header-info'
       >
           <div className='app__header-badge'>
-            <div className='badge-cmp app__flex'>
-                <div>
-                  <h1 className='head-text' >Yugal</h1>
-                  <h1 className='head-text'>
-                    Kishore
-                    <span style={{ color: "var(--secondary-color)"}}>.</span>
-                  </h1>
-                </div>
-            </div>
-
-            <div className='tag-cmp app__flex'>
-              <p className='p-text'>Game Developer</p>
-              <p className='p-text'>Web Developer</p>
+            <div className='quote-cmp app__flex'>
+              <p className='p-text'>- Blending code with creativity, I craft interactive experiences that bridge the gap between pixels and pixels, whether in the vast landscapes of the web or the immersive realms of gaming.</p>
             </div>
           </div>
       </motion.div>
