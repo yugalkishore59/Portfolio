@@ -37,19 +37,35 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Ways to <span>contact</span> me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
+          <img src={images.gmail} alt="email" />
           <a href="mailto:yugalkishore59@gmail.com" className="p-text">yugalkishore59@gmail.com</a>
         </div>
         <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
+          <img src={images.whatsapp} alt="phone" />
           <a href="tel:+917018886305" className="p-text">+91 7018886305</a>
         </div>
+        <div className="app__footer-card">
+          <img src={images.github} alt="phone" />
+          <a href="https://github.com/yugalkishore59/" className="p-text">GitHub</a>
+        </div>
+        <div className="app__footer-card">
+          <img src={images.linkedin} alt="phone" />
+          <a href="https://www.linkedin.com/in/yugalkishore/" className="p-text">LinkedIn</a>
+        </div>
+        <div className="app__footer-card">
+          <img src={images.instagram} alt="phone" />
+          <a href="https://www.instagram.com/mr.yugalkishore/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" className="p-text">Instagram</a>
+        </div>
       </div>
-      {!isFormSubmitted ? (
+
+      <br />
+      <h1 style={{color: 'white'}}>Thanks for stopping by!</h1>
+
+      {/* {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
@@ -74,7 +90,7 @@ const Footer = () => {
             Thank you for getting in touch!
           </h3>
         </div>
-      )}
+      )} */}
     </>
   );
 };

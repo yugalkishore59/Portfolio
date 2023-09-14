@@ -34,8 +34,20 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import night from '../assets/night.jpg';
+
+import gmail from '../assets/gmail.png';
+import linkedin from '../assets/linkedin.png';
+import github from '../assets/github.png';
+import instagram from '../assets/instagram.png';
+import whatsapp from '../assets/whatsapp.png';
 
 export default {
+  gmail,
+  linkedin,
+  github,
+  instagram,
+  whatsapp,
   email,
   mobile,
   api,
@@ -69,4 +81,5 @@ export default {
   nb,
   skype,
   spotify,
+  night,
 };

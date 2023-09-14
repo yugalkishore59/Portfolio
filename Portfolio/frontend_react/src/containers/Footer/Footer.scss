@@ -2,32 +2,40 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
+    
   
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
   }
+
+  #contact{
+    background: url("../../assets/night.jpg");
+    background-size: cover;
+  }
   
   .app__footer-cards {
     width: 60%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 4em 2rem 2rem;
+    
   
     .app__footer-card {
-      min-width: 290px;
+      min-width: 250px;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
   
-      margin: 1rem 0;
+      margin: 1rem 1rem;
       padding: 1rem;
       border-radius: 10px;
       cursor: pointer;
-      background-color: #fef4f5;
+      background-color: transparent;
+      border: solid gray 2px;
   
       transition: all 0.3s ease-in-out;
   
@@ -39,13 +47,17 @@
   
       p {
         font-weight: 500;
+        
       }
       a {
         text-decoration: none;
         font-weight: 500;
+        color: white;
       }
       &:hover {
-        box-shadow: 0 0 25px #fef4f5;
+        // box-shadow: 0 0 25px #fef4f5;
+        background-color: var(--secondary-color);
+        border: transparent solid 2px;
       }
   
       @media screen and (max-width: 450px) {
@@ -56,14 +68,6 @@
     @media screen and (max-width: 768px) {
       width: 100%;
     }
-  }
-  
-  .app__footer-cards .app__footer-card:last-child {
-    background-color: #f2f7fb;
-  }
-  
-  .app__footer-cards .app__footer-card:last-child:hover {
-    box-shadow: 0 0 25px #f2f7fb;
   }
   
   .app__footer-form {
