@@ -7,12 +7,12 @@
   .app__testimonial-item {
     width: 60%;
     min-height: 320px;
-    background-color: var(--white-color);
+    background-color: var(--darkGray-color);
     display: flex;
     flex-direction: row;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
   
     transition: all 0.3s ease-in-out;
   
@@ -55,7 +55,7 @@
     p {
       font-size: 1.25rem;
       line-height: 2rem;
-      color: var(--black-color);
+      color: var(--white-color);
       font-family: var(--font-base);
   
       @media screen and (min-width: 2000px) {
@@ -90,7 +90,8 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-color: var(--white-color);
+      background-color: var(--darkGray-color);
+      // border: gray solid 2px;
   
       margin: 1rem;
       transition: all 0.3s ease-in-out;
@@ -132,6 +133,7 @@
   
       img {
         width: 100%;
+        max-width: 100px;
         height: auto;
         object-fit: cover;
         filter: grayscale(1);
