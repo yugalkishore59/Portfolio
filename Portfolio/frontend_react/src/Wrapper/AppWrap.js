@@ -2,7 +2,6 @@
 
 import React from 'react'
 import {NavigationDots, SocialMedia} from '../components'
-
 const AppWrap = (Component, idName, classNames) => function HOC(){
     // HOC stands for higher order component
   return (
@@ -12,10 +11,10 @@ const AppWrap = (Component, idName, classNames) => function HOC(){
             <Component/>
 
             <div className='copyright'>
-                <p className='p-text'>
+                <p className='p-text' style={{color: 'rgba(255,255,255,0.2)'}}>
                     2023 YUGAL KISHORE
                 </p>
-                <p className='p-text'>
+                <p className='p-text' style={{color: 'rgba(255,255,255,0.2)'}}>
                     All rights reserved
                 </p>
             </div>

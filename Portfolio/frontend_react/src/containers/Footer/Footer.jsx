@@ -42,23 +42,23 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.gmail} alt="email" />
-          <a href="mailto:yugalkishore59@gmail.com" className="p-text">yugalkishore59@gmail.com</a>
+          <a target="_blank" href="mailto:yugalkishore59@gmail.com" className="p-text">yugalkishore59@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.whatsapp} alt="phone" />
-          <a href="tel:+917018886305" className="p-text">+91 7018886305</a>
+          <a target="_blank" href="tel:+917018886305" className="p-text">+91 7018886305</a>
         </div>
         <div className="app__footer-card">
           <img src={images.github} alt="phone" />
-          <a href="https://github.com/yugalkishore59/" className="p-text">GitHub</a>
+          <a target="_blank" href="https://github.com/yugalkishore59/" className="p-text">GitHub</a>
         </div>
         <div className="app__footer-card">
           <img src={images.linkedin} alt="phone" />
-          <a href="https://www.linkedin.com/in/yugalkishore/" className="p-text">LinkedIn</a>
+          <a target="_blank" href="https://www.linkedin.com/in/yugalkishore/" className="p-text">LinkedIn</a>
         </div>
         <div className="app__footer-card">
           <img src={images.instagram} alt="phone" />
-          <a href="https://www.instagram.com/mr.yugalkishore/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" className="p-text">Instagram</a>
+          <a target="_blank" href="https://www.instagram.com/mr.yugalkishore/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" className="p-text">Instagram</a>
         </div>
       </div>
 
