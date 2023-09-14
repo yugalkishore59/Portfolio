@@ -6,7 +6,7 @@
   
   .app__skills-container {
     width: 80%;
-    margin-top: 3rem;
+    margin-top: 5rem;
   
     display: flex;
     flex-direction: row;
@@ -45,7 +45,8 @@
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      background-color: #e4e4e4;
+      background-color: black;
+      // border: solid gray 2px;
   
       img {
         width: 50%;
@@ -53,7 +54,8 @@
       }
   
       &:hover {
-        box-shadow: 0 0 25px rgba(0, 55, 255, 0.279);
+        // box-shadow: 0 0 25px rgba(0, 55, 255, 0.279);
+        border: solid var(--secondary-color) 2px;
       }
   
       @media screen and (min-width: 2000px) {
@@ -70,6 +72,7 @@
     p {
       font-weight: 500;
       margin-top: 0.5rem;
+      color: white;
     }
   
     @media screen and (min-width: 2000px) {
@@ -115,11 +118,12 @@
   
       h4 {
         font-weight: 500;
+        color: white;
       }
   
       p {
         font-weight: 400;
-        color: var(--gray-color);
+        color: var(--white-color);
         margin-top: 5px;
       }
     }
@@ -146,7 +150,7 @@
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
     border-radius: 5px !important;
     padding: 1rem !important;
-    color: var(--gray-color) !important;
+    color: var(--white-color) !important;
     text-align: center !important;
     line-height: 1.5 !important;
     opacity: 1 !important;

@@ -106,7 +106,8 @@ const Work = () => {
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
               </div> */}
-              <WorkDescription work={work} />
+              <h4 className="bold-text">{work.title}</h4>
+              <WorkDescription work={work.description} />
             </div>
           </div>
         ))}
