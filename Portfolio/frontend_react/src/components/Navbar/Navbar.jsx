@@ -11,9 +11,9 @@ const Navbar = () => {
     <nav className='app__navbar'>
       {/* why 2 underscores? this is BEM naming methodology. 
       https://www.devbridge.com/articles/implementing-clean-css-bem-method/ */}
-      <div className='app__navbar-logo'>
+      {/* <div className='app__navbar-logo'>
         <img src={images.logo} alt="logo" />
-      </div>
+      </div> */}
       <ul className='app__navbar-links'>
         {['home', 'about', 'work', 'skills','testimonials', 'contact'].map((item)=>(
           <li className='app__flex p-text' key={`link-${item}`}>
