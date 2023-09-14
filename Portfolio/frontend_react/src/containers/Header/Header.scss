@@ -84,8 +84,8 @@
     background-color: transparent;
     color: white;
     border-radius: 5px;
-    border: gray solid 1px;
-    
+    border: rgb(99, 99, 99) solid 2px;
+    cursor: pointer;
 
     &:hover{
         background-color: var(--secondary-color);

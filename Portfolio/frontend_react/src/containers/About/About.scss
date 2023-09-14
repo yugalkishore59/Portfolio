@@ -13,25 +13,43 @@
 }
 
 .app__profile-item{
-    width: 190px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 2rem;
+    // width: 190px;
+    // display: flex;
+    // // justify-content: flex-start;
+    // // align-items: flex-start;
+    // // width: 370px;
+    // // margin: 2rem 4rem;
+    // justify-content: center;
+    // align-items: center;
 
-    .app__profile-item-container{
+    // width: 370px;
+    //     margin: 2rem 4rem;
+
+    //     img{
+    //         height: 320px;
+    //     }
+
+    // height: 40px;
+    
+    // flex-direction: column;
+    // margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    width: 350px; /* Adjust the width to your preference */
+
+    .app__profile-item-container {
         padding: 20px;
-        
         background-color: black;
         color: white;
         border-radius: 0.5rem;
-        // border: gray solid 1px;
-        
-
-        &:hover{
-            background-color: var(--secondary-color);
-            border: none;
+        transition: background-color 0.3s ease, border 0.3s ease; //extra
+      
+        &:hover {
+          background-color: var(--secondary-color);
+          border: none;
         }
     }
 
@@ -42,18 +60,60 @@
 
     img{
         padding: 6rem;
-        // width: 100%;
-        height: 100%;
+        width: 100%; /* Make the image fill the container width */
+        height: auto; /* Maintain the image's aspect ratio */
+        // max-height: 200px; /* Limit the maximum image height */
         border-radius: 15px;
         object-fit: cover;
     }
 
-    @media screen {
-        width: 370px;
-        margin: 2rem 4rem;
+    @media screen and (max-width: 900px){
+        width: 300px;
 
         img{
-            height: 320px;
+            padding: 4rem;
+        }
+    }
+
+    @media screen and (max-width: 900px){
+        width: 250px;
+
+        img{
+            padding: 2rem;
         }
     }
 }
+
+// .app__profile-item {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin: 2rem;
+//     width: 250px; /* Adjust the width to your preference */
+//   }
+  
+//   .app__profile-item-container {
+//     padding: 20px;
+//     background-color: black;
+//     color: white;
+//     border-radius: 0.5rem;
+//     transition: background-color 0.3s ease, border 0.3s ease;
+  
+//     &:hover {
+//       background-color: var(--secondary-color);
+//       border: none;
+//     }
+//   }
+  
+//   h2, p {
+//     color: white;
+//     text-align: center;
+//   }
+  
+//   img {
+//     width: 100%; /* Make the image fill the container width */
+//     height: auto; /* Maintain the image's aspect ratio */
+//     max-height: 200px; /* Limit the maximum image height */
+//     border-radius: 15px;
+//     object-fit: cover;
+//   }
